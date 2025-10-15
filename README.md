@@ -3,22 +3,24 @@
 # Twilight
 
 <table style="width: 100%; table-layout: fixed;">
-  <tr>
-    <td colspan="5"><img alt="" src="docs/image/Desktop.jpg" style="max-width: 100%;"></td>
-  </tr>
-  <tr>
-    <td><img alt="" src="docs/image/Mobile_4.jpg" style="max-width: 100%;"></td>
-    <td><img alt="" src="docs/image/Mobile_2.jpg" style="max-width: 100%;"></td>
-    <td><img alt="" src="docs/image/Mobile_1.jpg" style="max-width: 100%;"></td>
-    <td><img alt="" src="docs/image/Mobile_3.jpg" style="max-width: 100%;"></td>
-    <td><img alt="" src="docs/image/Mobile_5.jpg" style="max-width: 100%;"></td>
-  </tr>
+   <tr>
+      <td colspan="5"><img alt="Desktop" src="docs/image/Desktop.jpg" style="max-width: 100%;"></td>
+   </tr>
+   <tr>
+      <td><img alt="Mobile_4" src="docs/image/Mobile_4.jpg" style="max-width: 100%;"></td>
+      <td><img alt="Mobile_2" src="docs/image/Mobile_2.jpg" style="max-width: 100%;"></td>
+      <td><img alt="Mobile_1" src="docs/image/Mobile_1.jpg" style="max-width: 100%;"></td>
+      <td><img alt="Mobile_3" src="docs/image/Mobile_3.jpg" style="max-width: 100%;"></td>
+      <td><img alt="Mobile_5" src="docs/image/Mobile_5.jpg" style="max-width: 100%;"></td>
+   </tr>
 </table>
 
 A static blog built with [Astro](https://astro.build) framework.
 
 [**🖥️ Live Demo**](https://twilight.spr-aachen.com)
 [**📝 Documentation**](https://docs.twilight.spr-aachen.com)
+
+English | [**中文**](docs/README_ZH.md)
 
 </div>
 
@@ -74,8 +76,6 @@ Remember to update the `site` URL in `astro.config.mjs` before deployment!
 
 
 ## ⚡ Commands
-
-All commands are run from the project root:
 
 | Command                    | Action                                    |
 |:---------------------------|:------------------------------------------|
