@@ -69,8 +69,8 @@ export function applyThemeToDocument(theme: LIGHT_DARK_MODE) {
 		document.documentElement.classList.add("is-theme-transitioning");
 	}
 
-	// 使用 requestAnimationFrame 确保 DOM 更新的时序
-	requestAnimationFrame(() => {
+	// 使用 Promise.resolve 确保在下一微任务中执行，避免闪屏
+	Promise.resolve().then(() => {
 		// 应用主题变化
 		if (needsThemeChange) {
 			if (targetIsDark) {
@@ -83,10 +83,10 @@ export function applyThemeToDocument(theme: LIGHT_DARK_MODE) {
         // Set the theme for Expressive Code based on current mode
         document.documentElement.setAttribute("data-theme", targetTheme);
 
-        // 在同一帧内快速移除保护类，使用微任务确保DOM更新完成
-        if (needsThemeChange) {
-			// 使用微任务在同一帧内处理，避免额外的帧延迟
-			Promise.resolve().then(() => {
+        // 在下一帧快速移除保护类，使用微任务确保DOM更新完成
+		if (needsThemeChange) {
+			// 使用 requestAnimationFrame 确保在下一帧移除过渡保护类
+			requestAnimationFrame(() => {
                 document.documentElement.classList.remove("is-theme-transitioning");
             });
         }
