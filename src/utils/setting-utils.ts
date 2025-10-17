@@ -48,7 +48,7 @@ export function applyThemeToDocument(theme: LIGHT_DARK_MODE) {
 			targetIsDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
 			break;
 		default:
-			targetIsDark = true; // fallback to dark mode if theme is unknown
+			targetIsDark = currentIsDark; // fallback to current mode if theme is unknown
 			break;
 	}
 
@@ -69,8 +69,8 @@ export function applyThemeToDocument(theme: LIGHT_DARK_MODE) {
 		document.documentElement.classList.add("is-theme-transitioning");
 	}
 
-	// 使用 Promise.resolve 确保在下一微任务中执行，避免闪屏
-	Promise.resolve().then(() => {
+	// 使用 requestAnimationFrame 确保在下一帧执行，避免闪屏
+	requestAnimationFrame(() => {
 		// 应用主题变化
 		if (needsThemeChange) {
 			if (targetIsDark) {

@@ -177,6 +177,8 @@ const umamiScripts = umamiConfig.scripts || ""; // 获取Umami scripts配置
 		<script is:inline define:vars={{LIGHT_MODE, DARK_MODE, SYSTEM_MODE, BANNER_HEIGHT_EXTEND, PAGE_WIDTH, configHue, defaultTheme: siteConfig.defaultTheme}}>
 			// Load the theme from local storage
 			const theme = localStorage.getItem('theme') || defaultTheme;
+			// Apply the theme to the document
+			let isDark = false;
 			switch (theme) {
 				case LIGHT_MODE:
 					document.documentElement.classList.remove('dark');
@@ -200,6 +202,7 @@ const umamiScripts = umamiConfig.scripts || ""; // 获取Umami scripts配置
 
 			// Load the hue from local storage
 			const hue = localStorage.getItem('hue') || configHue;
+			// Apply the hue to the document
 			document.documentElement.style.setProperty('--hue', hue);
 
 			// calculate the --banner-height-extend, which needs to be a multiple of 4 to avoid blurry text
