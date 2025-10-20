@@ -3,7 +3,7 @@ backend:
   branch: main
   repo: cunzhong/Twilight # 请替换为您的 GitHub 仓库
   site_domain: tw.088878.xyz # 请替换为您的域名
-  base_url: https://tw.088878.xyz  # 请替换为您的 URL
+  base_url: https://tw.088878.xyz # 请替换为您的 URL
   auth_endpoint: oauth # OAuth 路由由集成提供
 
 # 媒体文件配置
