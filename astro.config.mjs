@@ -35,7 +35,7 @@ import { remarkReadingTime } from "./src/plugins/remark-reading-time.mjs";
 const adapter = process.env.CF_PAGES ? cloudflarePages() : vercel({ mode: "serverless" });
 
 export default defineConfig({
-	site: "https://twilight.spr-aachen.com", // Change it to your own site URL
+	site: "https://tw.088878.xyz", // Change it to your own site URL
 
 	base: "/",
 	trailingSlash: "always",
@@ -43,7 +43,7 @@ export default defineConfig({
 	integrations: [
 		decapCmsOauth({
 			decapCMSVersion: "3.3.3",
-			oauthDisabled: true, // Disable it to use oauth, requires .env configuration
+			oauthDisabled: false, // Disable it to use oauth, requires .env configuration
 		}),
 		tailwind({
 			nesting: true,
