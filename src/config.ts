@@ -22,7 +22,7 @@ const SITE_LANG = "zh_CN"; // 语言代码，例如：'en', 'zh_CN', 'ja' 等。
 
 export const siteConfig: SiteConfig = {
 	title: "Tw-Nai",
-	subtitle: "Blog Tw",
+	subtitle: "A Blog demo",
 
 	lang: SITE_LANG,
 
@@ -81,7 +81,7 @@ export const siteConfig: SiteConfig = {
 
 		homeText: {
 			enable: true, // 在主页显示自定义文本
-			title: "Twilight", // 主页横幅主标题
+			title: "Nai Space", // 主页横幅主标题
 			subtitle: [
 				"Illuminate Our Paths",
 			],
@@ -98,7 +98,7 @@ export const siteConfig: SiteConfig = {
 			enable: false, // 显示横幅图片来源文本
 
 			text: "Describe", // 要显示的来源文本
-			url: "", // （可选）原始艺术品或艺术家页面的 URL 链接
+			url: "https://www.088878.xyz", // （可选）原始艺术品或艺术家页面的 URL 链接
 		},
 
 		navbar: {
@@ -158,7 +158,7 @@ export const navBarConfig: NavBarConfig = {
 			children: [
 				{
 					name: "GitHub",
-					url: "https://github.com/Example",
+					url: "https://github.com/cunzhong",
 					external: true,
 					icon: "fa6-brands:github",
 				},
@@ -171,7 +171,7 @@ export const navBarConfig: NavBarConfig = {
 			],
 		},
 		{
-			name: "My",
+			name: "空间",
 			url: "/content/",
 			icon: "material-symbols:person",
 			children: [
@@ -224,7 +224,7 @@ export const profileConfig: ProfileConfig = {
 		{
 			name: "GitHub",
 			icon: "fa6-brands:github",
-			url: "https://github.com/Spr-Aachen/Twilight",
+			url: "https://github.com/cunzhong/Twilight",
 		},
 	],
 };
@@ -244,7 +244,7 @@ export const expressiveCodeConfig: ExpressiveCodeConfig = {
 
 
 export const commentConfig: CommentConfig = {
-	enable: false, // 启用评论功能。当设置为 false 时，评论组件将不会显示在文章区域。
+	enable: true, // 启用评论功能。当设置为 false 时，评论组件将不会显示在文章区域。
 	twikoo: {
 		envId: "https://twikoo.vercel.app",
 		lang: "en", // 设置 Twikoo 评论系统语言为英文
@@ -440,7 +440,7 @@ export const particleConfig: ParticleConfig = {
 
 // 看板娘配置
 export const pioConfig: import("./types/config").PioConfig = {
-	enable: false, // 启用看板娘
+	enable: true, // 启用看板娘
 	models: ["/pio/models/pio/model.json"], // 默认模型路径
 	position: "left", // 默认位置在右侧
 	width: 280, // 默认宽度
