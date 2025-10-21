@@ -17,12 +17,12 @@ import { getTranslateLanguageFromConfig } from "./utils/language-utils";
 
 
 // 定义站点语言
-const SITE_LANG = "en"; // 语言代码，例如：'en', 'zh_CN', 'ja' 等。
+const SITE_LANG = "zh_CN"; // 语言代码，例如：'en', 'zh_CN', 'ja' 等。
 
 
 export const siteConfig: SiteConfig = {
-	title: "Twilight",
-	subtitle: "Blog Template",
+	title: "Tw-Nai",
+	subtitle: "Blog Tw",
 
 	lang: SITE_LANG,
 
@@ -30,7 +30,7 @@ export const siteConfig: SiteConfig = {
 		hue: 255, // 主题色的默认色相，范围从 0 到 360。例如：红色：0，青色：200，蓝绿色：250，粉色：345
 		fixed: false, // 对访问者隐藏主题色选择器
 	},
-    defaultTheme: "dark", // "system" 跟随系统， "light" 浅色， "dark" 深色
+    defaultTheme: "system", // "system" 跟随系统， "light" 浅色， "dark" 深色
 
 	translate: {
 		enable: true, // 启用翻译功能
