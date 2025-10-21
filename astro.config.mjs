@@ -35,7 +35,7 @@ import { remarkReadingTime } from "./src/plugins/remark-reading-time.mjs";
 const adapter = process.env.CF_PAGES ? cloudflarePages() : vercel({ mode: "serverless" });
 
 export default defineConfig({
-	site: "https://tw.088878.xyz", // Change it to your own site URL
+	site: "https://twilight.spr-aachen.com", // Change it to your own site URL
 
 	base: "/",
 	trailingSlash: "always",
